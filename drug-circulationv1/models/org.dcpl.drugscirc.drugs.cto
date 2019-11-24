@@ -19,3 +19,24 @@
 namespace org.dcpl.drugscirc.drugs
 
 /** Drugs Production */
+
+
+asset Drugs identified by drugId {
+  o String drugId
+  o String Owner
+  o Ownership OwnershipType default= "OWNED"
+  
+  // Details of Product
+  o String Name
+  o Double price
+  o String Description optional
+  o String prescription optional
+  o String SideEffects optional
+
+
+
+}
+enum Ownership {
+  o TPARTY
+  o OWNED
+}
