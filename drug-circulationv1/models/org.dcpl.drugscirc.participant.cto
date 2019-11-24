@@ -2,6 +2,14 @@ namespace org.dcpl.drugscirc.participant
 
 abstract participant DCPLParticipant identified by participantKey {
   o String participantKey
+  o Contact contact
+}
+
+concept Contact {
+  o String Fname
+  o String Lname
+  o String Email
+  
 }
 
 participant DCPLNetworkAdmin extends DCPLParticipant {
