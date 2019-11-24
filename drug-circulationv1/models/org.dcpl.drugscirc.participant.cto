@@ -1,0 +1,17 @@
+namespace org.dcpl.drugscirc.participant 
+
+abstract participant DCPLParticipant identified by participantKey {
+  o String participantKey
+}
+
+participant DCPLNetworkAdmin extends DCPLParticipant {
+  
+}
+
+participant DCPLPersonnel extends DCPLParticipant {
+  o String Department
+}
+
+participant B2BPartner extends DCPLParticipant {
+  
+}
