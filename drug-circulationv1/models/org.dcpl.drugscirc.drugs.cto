@@ -32,6 +32,7 @@ asset Drugs identified by drugId {
   o String Description optional
   o String prescription optional
   o String SideEffects optional
+  o DateTime Expire optional
 
 
 
