@@ -1,0 +1,15 @@
+
+/** For Pharmasict Factor that will check on the drug before sell it */
+namespace org.dcpl.drugscirc.phrms
+
+asset Pharma identified by PharmaID {
+  o String PharmaID
+  o String Name 
+  o Integer Branch
+  o Route route 
+}
+
+concept Route {
+  o String Destination
+  o DateTime dliverytime
+}
