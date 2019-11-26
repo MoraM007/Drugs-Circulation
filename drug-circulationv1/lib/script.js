@@ -26,9 +26,9 @@ function    CreatePharma(PharmaData) {
             // 5. Create a new concept using the factory & set the data in it
             var route = factory.newConcept(NS,"Route");
 
-            route.destination = PharmaData.Destination;
-            route.schedule = PharmaData.Schedule;
-            route.branch = PharmaData.Branch;
+            route.Destination = PharmaData.Destination;
+            route.Schedule = PharmaData.Schedule;
+          //  route.Branch = PharmaData.Branch;
             pharma.route = route;
             
 

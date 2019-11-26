@@ -6,7 +6,7 @@ import org.dcpl.drugscirc.drugs.Drugs
 
 asset Pharma identified by PharmaID {
   o String      PharmaID
-  o Integer     Branch
+  //o Integer     Branch
   o Route       route 
   o String[]    Name 
   --> Drugs     drugs optional
@@ -22,7 +22,7 @@ concept Route {
 
 transaction CreatePharma {
   o String[]      Name
-  o Integer      Branch
+  //o Integer      Branch
   o String      Destination
   o DateTime    Schedule 
 
