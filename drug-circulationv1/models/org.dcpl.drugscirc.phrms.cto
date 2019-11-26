@@ -15,5 +15,21 @@ asset Pharma identified by PharmaID {
 
 concept Route {
   o String    Destination
-  o DateTime  dliverytime
+  o DateTime  Schedule
+}
+
+// Logistics of DCPL creates A Pharmasict
+
+transaction CreatePharma {
+  o String[]      Name
+  o Integer      Branch
+  o String      Destination
+  o DateTime    Schedule 
+
+}
+
+event PharmaCreated {
+
+  o String    PharmaID
+
 }
