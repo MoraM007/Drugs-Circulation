@@ -1,12 +1,12 @@
 
 /** For Pharmasict Factor that will check on the drug before sell it */
+
 namespace org.dcpl.drugscirc.phrms
 
 import org.dcpl.drugscirc.drugs.Drugs
 
 asset Pharma identified by PharmaID {
   o String      PharmaID
-  //o Integer     Branch
   o Route       route 
   o String[]    Name 
   --> Drugs     drugs optional
@@ -14,6 +14,7 @@ asset Pharma identified by PharmaID {
 }
 
 concept Route {
+  o String    Origin
   o String    Destination
   o DateTime  Schedule
 }
@@ -22,7 +23,7 @@ concept Route {
 
 transaction CreatePharma {
   o String[]      Name
-  //o Integer      Branch
+  o String        Origin
   o String      Destination
   o DateTime    Schedule 
 
