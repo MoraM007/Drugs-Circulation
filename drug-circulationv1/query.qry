@@ -1,3 +1,4 @@
+
 // Returns all flights 
 query AllPharmas {
   description: "Returns all Pharma in the registry"
@@ -13,18 +14,18 @@ query AllPharmsSkipLimit {
         SKIP   _$skip
 }
 
-/*// Selects flights based on the origin and destination
-query FlightsOriginAndDestination {
-  description: "Returns all flights in the registry"
+// Selects flights based on the origin and destination
+query PharmsOriginAndDestination {
+  description: "Returns all pharms in the registry"
   statement:  
-    SELECT  org.acme.airline.flight.Flight
-      WHERE   (route.origin == _$origin_airport AND route.destination  == _$destination_airport )
+    SELECT  org.dcpl.drugscirc.phrms.Pharma
+      WHERE   (route.Origin == _$origin_pharma AND route.Destination  == _$destination_pharma )
 }
-
-// Selects flights based on the origin, destination & exact Schedule datetime (yep its not good :)
-query FlightsOnOriginDestinationDate {
-  description: "Returns all flights in the registry"
+/*
+// Selects pharms based on the origin, destination & exact Schedule datetime 
+query PharmsOnOriginDestinationDate {
+  description: "Returns all pharms in the registry"
   statement:  
-    SELECT  org.acme.airline.flight.Flight
-    WHERE (route.origin == _$origin_airport AND route.destination  == _$destination_airport AND route.schedule == _$date)
+    SELECT  org.dcpl.drugscirc.pharms.Pharma
+    WHERE (route.Origin == _$origin_pharma AND route.Destination  == _$destination_pharma AND route.Schedule == _$date)
 }*/
