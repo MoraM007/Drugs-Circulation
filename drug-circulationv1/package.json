@@ -1,7 +1,7 @@
 {
   "name": "hlf-course-api",
   "version": "1.0.0",
-  "description": "This is part of a course on Hyperledger Fabric http://ACloudFan.com",
+  "description": "This is part of a course on Hyperledger Fabric",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/acloudfan/HLF-Fabric-API.git"
   },
-  "author": "raj@acloudfan.com",
+  "author": "mostafamoura07@gmail.com",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/acloudfan/HLF-Fabric-API/issues"

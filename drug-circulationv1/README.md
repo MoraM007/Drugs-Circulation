@@ -1,7 +1,7 @@
 # This is part of a course on Hyperledger Fabric
-# http://ACloudFan.com
 
-# NOTE:  December 21, 2018
+
+
 
 # 0.20.3 introduced changes that led to issues for some students
 # All issues stand resolved at this time.
